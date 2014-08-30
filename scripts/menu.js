@@ -3,7 +3,7 @@
      var url_patterns = ['index', '-au-', '-tc-', '-pm-', '-vas-'];
      url_patterns.forEach(function(pat, i) {
        if(url.search(pat) >= 0) {
-         $("#myli:nth-child("+(i+1)+")").addClass("current");
+         $("#myli:nth-child("+(i)+")").addClass("current");
        }
      });
     //  if (url.search("index") >= 0) {

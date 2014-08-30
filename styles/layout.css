@@ -338,7 +338,35 @@ div.wrapper {
 	padding: 5px; }
 
 body > table {
-    /*background-image: url('../images/pw_pattern.png')*/
-background-color: #eee;
+	background-color: #eee;
+	min-height: 600px;
+}
 
+body.contactus #content .content_resize {
+	margin-top: -110px;
+}
+body.contactus .left,.right {
+	float: left;
+	width: 50%;
+}
+body.contactus .left {
+	padding-top: 20px;
+}
+
+body.contactus #content .article {
+	width: 100%;
+	float: none;
+}
+body.contactus .map {
+	overflow:hidden;
+	height: 420px;
+	width: 420px;
+}
+#gmap_canvas {
+	height: 100%;
+	width: 100%;
+}
+#gmap_canvas img{
+	max-width:none!important;
+	background:none!important;
 }

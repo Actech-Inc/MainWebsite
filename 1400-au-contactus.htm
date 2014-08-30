@@ -27,7 +27,7 @@ valox, duracon, noryl, ryton, nylon">
 <!-- InstanceEndEditable -->
 </head>
 <!-- #################################################################################################### -->
-<body class="indexbg">
+<body class="indexbg contactus">
 <span style='display: none;'><a href='http://apycom.com' target='_blank'>Apycom jQuery Menus</a></span>
 <!-- #################################################################################################### -->
 <div id="titlrbar">
@@ -49,13 +49,13 @@ valox, duracon, noryl, ryton, nylon">
 <li id="myli"><a href="2100-tc-variety.htm" class="parent"><span>Tooling Capabilities</span></a>
    <ul>
       <li><a href="2100-tc-variety.htm"><span>Variety of Tooling</span></a></li>
-      <li><a href="2200-tc-equipment.htm"><span>Partial List of Equipment</span></a></li>
+      <li><a href="2200-tc-equipment.htm"><span>List of Equipment</span></a></li>
    </ul>
 </li>
 <li id="myli"><a href="3100-pm-variety.htm" class="parent"><span>Plastic Molding</span></a>
    <ul>
       <li><a href="3100-pm-variety.htm"><span>Variety of Products</span></a></li>
-      <li><a href="3200-pm-equipment.htm"><span>Partial List of Equipment</span></a></li>
+      <li><a href="3200-pm-equipment.htm"><span>List of Equipment</span></a></li>
       <li><a href="3310-pm-abs.htm" class="parent"><span>Major Resins Used</span></a>
    <ul>
       <li><a href="3310-pm-abs.htm"><span>ABS</span></a></li>
@@ -89,6 +89,37 @@ valox, duracon, noryl, ryton, nylon">
 <div class="content_resize">
 <div class="article">
 <!-- InstanceBeginEditable name="au-article-template" -->
+<div class="left">
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBdGlE7kWSqS5gLzf9a6FiI_Su-NjAAjLk"></script>
+<div class="map">
+<div id="gmap_canvas"></div>
+<script>
+function init_map(){
+  var myOptions = {
+    zoom:4,
+    center: new google.maps.LatLng(25.073179862984983,121.57805872374274),
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+     disableDefaultUI: true
+  };
+  var map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+  var marker = new google.maps.Marker({
+    map: map,
+    position: new google.maps.LatLng(25.073179862984983, 121.57805872374274)
+  });
+  var infowindow = new google.maps.InfoWindow({
+    content:"<b>We are Here !!</b>"
+  });
+  google.maps.event.addListener(marker, "click", function(){
+    infowindow.open(map,marker);
+  });
+  infowindow.open(map,marker);
+}
+google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+</div>
+</div>
+<div class="right">
+  <div class="content">
 <h2>Contact Us</h2><br />
 <p><h4>Actech Inc.</h4>
 <br />
@@ -96,37 +127,12 @@ valox, duracon, noryl, ryton, nylon">
 <br />
 Taipei 11491, Taiwan
 <br /><br />
-t: +886 (2) 8797 6901 <br />
-f: +886 (2) 8797 6902 <br />
-e: <a href="mailto:info@actech-inc.com">info@actech-inc.com</a><br />
-w: <a href="http://www.actech-inc.com">www.actech-inc.com</a><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+Phone: +886 (2) 8797 6901 <br />
+Fax: +886 (2) 8797 6902 <br />
+E-mail: <a href="mailto:info@actech-inc.com">info@actech-inc.com</a>
+</div>
+</div>
 
-<!-- InstanceEndEditable -->
-</div>
-<div class="leftmenu">
-<ul><h4>About Us</h4>
-    <li><a id="mylia1" href="1100-au-whyactech.htm">- Why Actech</a></li>
-    <li><a id="mylia2" href="1200-au-testimonials.htm">- Testimonials</a>
-    <li><a id="mylia3" href="1300-au-projectschedule.htm">- Project Schedule</a></li>
-</ul>
-</div>
 </div>
 </div>
 </td></tr></table>
