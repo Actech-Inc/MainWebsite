@@ -1,0 +1,338 @@
+/*
+Template Name: Gallerised
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+/* ----------Import---------- */
+@import url(mainmenu.css);
+@import url(slide.css);
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
+
+/* ----------Common---------- */
+.tc_img { border: solid #eee 5px; padding: 3px; }
+h4 { margin-bottom: 8px; font-size: 20px; font-family: Arimo, Calibri; text-align: left; }
+.indexbg {
+background-image: url(../images/binding_dark.png);
+}
+.clear { clear: both; }
+br.clear { clear: both; margin-top: 0px; }
+.clr {
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%; }
+body { margin: 0; padding: 0; overflow-y: scroll;  }
+img { border: none; display: block; margin: 0; padding: 0; }
+a:link { color: #dd0000; text-decoration: underline; font-family: Arimo, Calibri; }
+a:active { color: #dd0000; text-decoration: none; font-family: Arimo, Calibri; }
+a:visited { color: #dd0000; text-decoration: none; font-family: Arimo, Calibri; }
+a:hover { color: #dd0000; text-decoration: underline; font-family: Arimo, Calibri; }
+@font-face {
+font-family: 'Calibri';
+src: url('../fonts/Calibri.eot');
+src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Calibri.woff') format('woff'),url('../fonts/neues_bauen_demo-webfont.ttf') format('truetype'),
+      url('../fonts/Calibri.ttf#NeuesBauenDemo') format('ttf');
+      font-weight: normal;
+      font-style: normal; }
+#featured_slide_ {
+    font-family: Arimo, Calibri;
+	border: solid #000 0px;
+	color: #000;
+	display: block;
+	height: 0px;
+	overflow: hidden; /* important */
+	padding: 0px;
+	position: relative; /* important */
+	width: 950px; }
+
+/* ----------Index Logo---------- */
+#logo {
+	padding: 0; }
+.logo_resize {
+	background: url(../images/common/logo.jpg) no-repeat;
+	width: 970px;
+	height: 50px;
+	margin: 0 auto; }
+
+/* ----------Index Slider---------- */
+.slide { margin: 0; padding: 0; }
+div.wrapper {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: 100%; }
+
+/* ----------Footer---------- */
+.footer {
+	font-family: Arimo, Calibri;
+	color: #949494;
+	text-align: center; }
+#footer {
+	font-family: Arimo, Calibri;
+	display: block;
+	margin: 0 auto;
+	padding: 5px; }
+#footer p {
+	color: #ccc;
+	font-size: 13px;
+	font-family: Arimo, Calibri;
+	font-weight: normal;
+	margin: 0;
+	padding: 0; }
+
+/* ----------Titlebar---------- */
+#titlrbar {
+	padding: 0; }
+.titlebar_resize {
+	background: url(../images/common/titlebar.jpg) no-repeat;
+	width: 970px;
+	height: 180px;
+	margin: 0 auto; }
+
+/* ----------Content---------- */
+#content { font-family: Arimo, Calibri; }
+#content .content_resize {
+	margin: 0 auto;
+	width: 950px; }
+
+/* ----------Left Menu (235px; padding 15px; 225px+30px=265px)---------- */
+#content .leftmenu {
+	font-family: Arimo, Calibri;
+	float: left;
+	line-height: 30px;
+	margin: 0;
+	padding: 20px 15px 15px;
+	width: 235px; }
+#content .leftmenu ul { /* �������D�\�����D */
+	color: #000;
+	font-size: 20px;
+	font-family: Arimo, Calibri;
+	font-weight: normal;
+	list-style: none;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	text-decoration: none; }
+#content .leftmenu h4 {
+	margin: 15px 0px 0px 0px;
+	padding-left: 15px;
+}
+
+#content .leftmenu ul li { font-family: Arimo, Calibri; list-style: none; }
+
+#content .leftmenu ul li a.current {
+	border-bottom: dotted #ddd 1px;
+	background-color: #eee;
+	color: #151a92;
+	display: block;
+	font-size: 15px;
+	font-family: Arimo, Calibri;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	padding: 0 0 0 15px;
+	text-align: left;
+	text-decoration: none; }
+#content .leftmenu ul li a:link {
+	border-bottom: dotted #ddd 1px;
+	color: #777;
+	display: block;
+	font-size: 15px;
+	font-family: Arimo, Calibri;
+	font-weight: normal;
+	letter-spacing: 1px;
+	padding: 0 0 0 15px;
+	text-align: left;
+	text-decoration: none; }
+#content .leftmenu ul li a:visited {
+	border-bottom: dotted #ddd 1px;
+	color: #151a92;
+	display: block;
+	font-size: 15px;
+	font-family: Arimo, Calibri;
+	font-weight: normal;
+	letter-spacing: 1px;
+	padding: 0 0 0 15px;
+	text-align: left;
+	text-decoration: none; }
+#content .leftmenu ul li a:hover {
+	border-bottom: dotted #ddd 1px;
+	background-color: #eee;
+	color: #151a92;
+	display: block;
+	font-size: 15px;
+	font-family: Arimo, Calibri;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	padding: 0 0 0 15px;
+	text-align: left;
+	text-decoration: none; }
+#content .leftmenu ul li a:active {
+	border-bottom: dotted #ddd 1px;
+	background-color: #eee;
+	color: #151a92;
+	display: block;
+	font-size: 15px;
+	font-family: Arimo, Calibri;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	padding: 0 0 0 15px;
+	text-align: left;
+	text-decoration: none; }
+#content .leftmenu ul li ul {
+	font-family: Arimo, Calibri;
+	border-bottom: dotted #fff 1px;
+	list-style: none;
+	margin-top: 0;
+	padding: 0 0 0 25px; }
+#content .leftmenu ul li ul li { font-family: Arimo, Calibri; list-style: none; }
+#content .leftmenu ul li ul li a:link {
+	border-bottom: dotted #ddd 1px;
+	color: #777;
+	display: block;
+	font-size: 14px;
+	font-family: Arimo, Calibri;
+	font-weight: normal;
+	letter-spacing: 1px;
+	padding: 0 0 0 20px;
+	text-align: left;
+	text-decoration: none; }
+#content .leftmenu ul li ul li a:visited {
+	border-bottom: dotted #ddd 1px;
+	color: #151a92;
+	display: block;
+	font-size: 14px;
+	font-family: Arimo, Calibri;
+	font-weight: normal;
+ 	letter-spacing: 1px;
+	padding: 0 0 0 20px;
+	text-align: left;
+	text-decoration: none; }
+#content .leftmenu ul li ul li a:hover {
+	border-bottom: dotted #fff 0px;
+	color: #151a92;
+	display: block;
+	font-size: 14px;
+ 	font-family: Arimo, Calibri;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	padding: 0 0 0 20px;
+	text-align: left;
+	text-decoration: none; }
+#content .leftmenu ul li ul li a:active {
+	border-bottom: dotted #fff 0px;
+	color: #151a92;
+	display: block;
+	font-size: 14px;
+	font-family: Arimo, Calibri;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	padding: 0 0 0 20px;
+	text-align: left;
+	text-decoration: none; }
+
+/* ----------Right Article (665px; padding 20px; 665px+40px=705px)---------- */
+#content .article {
+	font-family: Arimo, Calibri;
+	font-size: 16px;
+	float: right;
+	line-height: 20px;
+	margin: 0;
+	padding: 20px;
+	width: 645px; }
+#content .testimonials {
+	font-family: Arimo, Calibri;
+	font-style: italic;
+	background-image: url(../images/common/letter.jpg) ;
+	font-size: 15px;
+	float: right;
+	line-height: 18px;
+	margin: 0;
+	padding: 10px;
+	width: 640px; }
+#content .article h2 {
+	margin: 20px 0px 0px 0px;}
+/* ----------Project Schedule---------- */
+#ps {
+	font-family: Arimo, Calibri;
+	border: solid #ccc 1px;
+	width: 100%;
+	padding: 0px; }
+#ps .tb_title {
+	border: dotted #ccc 1px;
+	background-color: #E1F0FF;
+	color: #009;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+	font-family: Arimo, Calibri;
+    width: 20%;
+	padding: 10px; }
+#ps .tb_content {
+	border: dotted #ccc 1px;
+	color: #000;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 14px;
+	font-family: Arimo, Calibri;
+    width: 80%;
+	padding: 2px; }
+
+/* ----------Plastic Molding Img---------- */
+#pm {
+	font-family: Arimo, Calibri;
+	border: solid #fff 3px;
+	padding: 3px;
+	width: 100%; }
+#pm td {
+	font-family: Arimo, Calibri;
+	background-color: #eee;
+	text-align: center;
+	width: 50%; }
+#pm .txtbg {
+	font-family: Arimo, Calibri;
+	background-color: #ccc;	}
+
+/* ----------Major Resins Used---------- */
+#mrs {
+	font-family: Arimo, Calibri;
+	width: 100%;
+	padding: 0px; }
+#mrs .tb_name {
+	border: dotted #ccc 1px;
+	background-color: #151a92;
+	color: #fff;
+	font-style: normal;
+	font-size: 18px;
+	font-family: Arimo, Calibri;
+	padding: 8px;
+	text-align: center; }
+#mrs .tb_title {
+	border: dotted #ccc 1px;
+	background-color: #eee;
+	color: #009;
+	font-style: normal;
+	font-size: 14px;
+	font-family: Arimo, Calibri;
+	padding: 5px;
+	text-align: right;
+    width: 20%; }
+#mrs .tb_content {
+	border: dotted #ccc 1px;
+	color: #000;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	font-family: Arimo, Calibri;
+    width: 80%;
+	padding: 5px; }
+
+body > table {
+    background-image: url('../images/pw_pattern.png')
+}

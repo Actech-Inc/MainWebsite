@@ -1,0 +1,68 @@
+/*
+Template Name: Gallerised
+File: Featured Slider CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+#featured_slide_ {
+	position: relative; /* important */
+	display: block;
+	width: 950px;
+	height: 450px;
+	overflow: hidden; /* important */
+	margin:0 auto;
+	padding: 5px;
+	border: 5px solid #242424;
+	color: #FFF;
+	background: url("../images/slide/stripe.gif") top left repeat #242424; }
+#featured_slide_Content {
+	width: 950px; /* important to be same as image width */
+	position: absolute;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none; }
+.featured_slide_Image {
+	position: relative;
+	display: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 950px; /* important - must be same as image width and slider width */
+	height: 450px; /* important - must be same as image height and slider height */
+	list-style: none; }
+.featured_slide_Image img {
+	width: 950px;
+	height: 450px; }
+.featured_slide_Image div.introtext {
+	position: absolute;
+	top: 370px;
+	left: 0;
+	width: 950px;
+	padding: 20px 0px;
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	filter: alpha(opacity=100);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	display: none;
+	font-family: Calibri; }
+#featured_slide_ h2{
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: Calibri; }
+#featured_slide_ p{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	line-height: normal; }
