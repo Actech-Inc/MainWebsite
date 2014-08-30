@@ -4,6 +4,10 @@
 	padding: 0;
 	}
 
+#menu .menu>li:first-child {
+  display: none;
+}
+
 .menu_resize {
         position: relative;
         z-index: 10;
@@ -11,7 +15,7 @@
 	padding: 0;
 	width: 970px;
 	height: 45px;
- }
+  background-color:#0F2540; }
 #menu ul {
         position: relative;
         z-index: 10;
@@ -67,7 +71,8 @@
     margin-top: 5px; }
 /**@replace#1*/
 #menu li {
-	background: url(../images/mainmenu/main-delimiter.jpg) 98% 5px no-repeat; }
+	/*background: url(../images/mainmenu/main-delimiter.jpg) 98% 5px no-repeat;*/
+  }
 #menu li.last {
 	background: none; }
 /* menu::level2 */
