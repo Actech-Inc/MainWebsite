@@ -46,7 +46,7 @@ function ShowSubMenu(id) {
   }
   else
   {
-     if (currentMenu != 0) {document.all["SubMenu" + currentMenu].style.display = "none";}  
+     if (currentMenu != 0) {document.all["SubMenu" + currentMenu].style.display = "none";}
      document.all["SubMenu" + id].style.display = "";
      currentMenu = id;
   }

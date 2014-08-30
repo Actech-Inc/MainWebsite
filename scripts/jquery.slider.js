@@ -1,19 +1,19 @@
 /* ------------------------------------------------------------------------
 	s3Slider
-	
+
 	Developped By: Boban Karišik -> http://www.serie3.info/
         CSS Help: Mészáros Róbert -> http://www.perspectived.com/
 	Version: 1.0
-	
+
 	Copyright: Feel free to redistribute the script/modify it, as
 			   long as you leave my infos at the top.
 ------------------------------------------------------------------------- */
 
 
-(function($){  
+(function($){
 
-    $.fn.s3Slider = function(vars) {       
-        
+    $.fn.s3Slider = function(vars) {
+
         var element     = this;
         var timeOut     = (vars.timeOut != undefined) ? vars.timeOut : 3000;
         var current     = null;
@@ -22,20 +22,20 @@
         var mOver       = false;
         var items       = $("#" + element[0].id + "Content ." + element[0].id + "Image");
         var itemsSpan   = $("#" + element[0].id + "Content ." + element[0].id + "Image div");
-            
+
         items.each(function(i) {
-    
+
             $(items[i]).mouseover(function() {
                mOver = true;
             });
-            
+
             $(items[i]).mouseout(function() {
                 mOver   = false;
                 fadeElement(true);
             });
-            
+
         });
-        
+
         var fadeElement = function(isMouseOut) {
             var thisTimeOut = (isMouseOut) ? (timeOut/2) : timeOut;
             thisTimeOut = (faderStat) ? 10 : thisTimeOut;
@@ -45,7 +45,7 @@
                 console.log("Poof..");
             }
         }
-        
+
         var makeSlider = function() {
             current = (current != null) ? current : items[(items.length-1)];
             var currNo      = jQuery.inArray(current, items) + 1
@@ -99,9 +99,9 @@
                 }
             }
         }
-        
+
         makeSlider();
 
-    };  
+    };
 
-})(jQuery);  
+})(jQuery);

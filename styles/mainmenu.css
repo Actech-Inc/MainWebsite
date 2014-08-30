@@ -4,10 +4,6 @@
 	padding: 0;
 	}
 
-#menu .menu>li:first-child {
-  display: none;
-}
-
 .menu_resize {
         position: relative;
         z-index: 10;
@@ -84,7 +80,7 @@
     left: -999em;
     width: 225px;
     padding: 5px 0 0 0;
-    background: rgb(0,0,0);
+    background: #0F2540;
     margin-top: 1px; }
 #menu ul ul a {
     padding: 0 0 0 15px;

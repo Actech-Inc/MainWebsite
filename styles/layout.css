@@ -15,7 +15,8 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 .tc_img { border: solid #eee 5px; padding: 3px; }
 h4 { margin-bottom: 8px; font-size: 20px; font-family: Arimo, Calibri; text-align: left; }
 .indexbg {
-background-image: url(../images/binding_dark.png);
+/*background-image: url(../images/Just_logo);*/
+background-color: #eee;
 }
 .clear { clear: both; }
 br.clear { clear: both; margin-top: 0px; }
@@ -91,10 +92,11 @@ div.wrapper {
 #titlrbar {
 	padding: 0; }
 .titlebar_resize {
-	background: url(../images/common/titlebar.jpg) no-repeat;
+	background: url(../images/just_logo.png) no-repeat;
+	background-size: auto 60px;
 	width: 970px;
-	height: 180px;
-	margin: 0 auto; }
+	height: 60px;
+	margin: 20px auto 30px; }
 
 /* ----------Content---------- */
 #content { font-family: Arimo, Calibri; }
@@ -108,7 +110,7 @@ div.wrapper {
 	float: left;
 	line-height: 30px;
 	margin: 0;
-	padding: 20px 15px 15px;
+	padding: 15px 0px;
 	width: 235px; }
 #content .leftmenu ul { /* �������D�\�����D */
 	color: #000;
@@ -121,6 +123,7 @@ div.wrapper {
 	text-align: center;
 	text-decoration: none; }
 #content .leftmenu h4 {
+	color: #0F2540;
 	margin: 15px 0px 0px 0px;
 	padding-left: 15px;
 }
@@ -257,6 +260,7 @@ div.wrapper {
 	padding: 10px;
 	width: 640px; }
 #content .article h2 {
+	color: #0F2540;
 	margin: 20px 0px 0px 0px;}
 /* ----------Project Schedule---------- */
 #ps {
@@ -334,5 +338,7 @@ div.wrapper {
 	padding: 5px; }
 
 body > table {
-    background-image: url('../images/pw_pattern.png')
+    /*background-image: url('../images/pw_pattern.png')*/
+background-color: #eee;
+
 }
