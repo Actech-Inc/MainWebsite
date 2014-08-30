@@ -1,5 +1,5 @@
 $(document).ready(function() {
 	$('#featured_slide_').s3Slider({
-		timeOut:3000 
+		timeOut:3000
 	});
 });
