@@ -92,11 +92,11 @@ div.wrapper {
 #titlrbar {
 	padding: 0; }
 .titlebar_resize {
-	background: url(../images/just_logo.png) no-repeat;
+	background: url(../images/actech_inc.png) no-repeat;
 	background-size: auto 60px;
 	width: 970px;
 	height: 60px;
-	margin: 20px auto 30px; }
+	margin: 20px auto 20px; }
 
 /* ----------Content---------- */
 #content { font-family: Arimo, Calibri; }
@@ -133,7 +133,7 @@ div.wrapper {
 #content .leftmenu ul li a.current {
 	border-bottom: dotted #ddd 1px;
 	background-color: #eee;
-	color: #151a92;
+	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 15px;
 	font-family: Arimo, Calibri;
@@ -155,7 +155,7 @@ div.wrapper {
 	text-decoration: none; }
 #content .leftmenu ul li a:visited {
 	border-bottom: dotted #ddd 1px;
-	color: #151a92;
+	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 15px;
 	font-family: Arimo, Calibri;
@@ -167,7 +167,7 @@ div.wrapper {
 #content .leftmenu ul li a:hover {
 	border-bottom: dotted #ddd 1px;
 	background-color: #eee;
-	color: #151a92;
+	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 15px;
 	font-family: Arimo, Calibri;
@@ -179,7 +179,7 @@ div.wrapper {
 #content .leftmenu ul li a:active {
 	border-bottom: dotted #ddd 1px;
 	background-color: #eee;
-	color: #151a92;
+	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 15px;
 	font-family: Arimo, Calibri;
@@ -208,7 +208,7 @@ div.wrapper {
 	text-decoration: none; }
 #content .leftmenu ul li ul li a:visited {
 	border-bottom: dotted #ddd 1px;
-	color: #151a92;
+	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 14px;
 	font-family: Arimo, Calibri;
@@ -219,7 +219,7 @@ div.wrapper {
 	text-decoration: none; }
 #content .leftmenu ul li ul li a:hover {
 	border-bottom: dotted #fff 0px;
-	color: #151a92;
+	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 14px;
  	font-family: Arimo, Calibri;
@@ -230,7 +230,7 @@ div.wrapper {
 	text-decoration: none; }
 #content .leftmenu ul li ul li a:active {
 	border-bottom: dotted #fff 0px;
-	color: #151a92;
+	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 14px;
 	font-family: Arimo, Calibri;
@@ -310,7 +310,7 @@ div.wrapper {
 	padding: 0px; }
 #mrs .tb_name {
 	border: dotted #ccc 1px;
-	background-color: #151a92;
+	background-color: rgba(8, 62, 114, 1);
 	color: #fff;
 	font-style: normal;
 	font-size: 18px;

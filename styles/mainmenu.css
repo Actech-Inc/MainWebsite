@@ -10,7 +10,7 @@
 	margin: 0 auto;
 	padding: 0;
 	width: 970px;
-	height: 45px;
+	height: 40px;
 background-color: rgba(8, 62, 114, 1);
   }
 #menu ul {
@@ -80,7 +80,7 @@ background-color: rgba(8, 62, 114, 1);
 	background: none; }
 #menu ul ul {
     position: absolute;
-    top: 42px;
+    top: 37px;
     left: -999em;
     width: 225px;
     padding: 5px 0;
