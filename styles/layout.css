@@ -369,3 +369,82 @@ body.contactus .map {
 	max-width:none!important;
 	background:none!important;
 }
+
+
+/* Email Form */
+.EmailForm {
+	position: fixed;
+	top: 100%;
+	right: 12px;
+	width: 360px;
+	border: 1px solid #ccc;
+	margin-top: -400px;
+	background-color: white;
+	transition: margin-top 0.6s ease;
+	z-index: 9999;
+}
+
+.EmailForm.hide {
+	margin-top: -42px;
+}
+
+.EmailForm .handle {
+	position: relative;
+	height: 42px;
+	line-height: 42px;
+	padding-left: 16px;
+	font-size: 18px;
+	background-color: rgba(8, 62, 114, 1);
+	color: white;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.EmailForm .handle:after {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	height: 42px;
+	width: 25px;
+	font-size: 10px;
+	content: '\25bc';
+}
+
+.EmailForm.hide .handle:after {
+	content: '\25b2';
+}
+
+.EmailForm .form {
+	position: relative;
+	height: 332px;
+	padding: 12px;
+}
+
+.EmailForm .form input, textarea {
+	width: 100%;
+	padding: 2px 5px;
+	font-size: 15px;
+}
+
+.EmailForm .form input {
+	height: 32px;
+	margin-bottom: 8px;
+}
+
+.EmailForm .form textarea {
+	height: 220px;
+}
+
+.EmailForm .email_form_submit {
+	position: absolute;
+	display: block;
+	right: 18px;
+	bottom: 8px;
+	padding: 3px 8px;
+	font-size: 18px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	background-color: rgba(8, 62, 114, 1);
+	color: white;
+}
+
