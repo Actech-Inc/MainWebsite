@@ -435,10 +435,17 @@ body.contactus .map {
 	height: 220px;
 }
 
+.EmailForm .error_message {
+	position: absolute;
+	left: 12px;
+	bottom: 12px;
+	color: red;
+	font-size: 18px;
+}
+
 .EmailForm .email_form_submit {
 	position: absolute;
-	display: block;
-	right: 18px;
+	right: 12px;
 	bottom: 8px;
 	padding: 3px 8px;
 	font-size: 18px;
