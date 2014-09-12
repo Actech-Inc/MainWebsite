@@ -373,6 +373,7 @@ body.contactus .map {
 
 /* Email Form */
 .EmailForm {
+    font-family: Arimo, Calibri;
 	position: fixed;
 	top: 100%;
 	right: 12px;
@@ -395,7 +396,7 @@ body.contactus .map {
 	padding-left: 16px;
 	font-size: 18px;
 	background-color: rgba(8, 62, 114, 1);
-	color: white;
+	color: #e5e5e5;
 	border-bottom: 1px solid #ccc;
 	cursor: pointer;
 }
@@ -452,6 +453,9 @@ body.contactus .map {
 	cursor: pointer;
 	border: 1px solid #ccc;
 	background-color: rgba(8, 62, 114, 1);
-	color: white;
+	color: #e5e5e5;
 }
 
+.EmailForm .email_form_submit:hover {
+    color: white;
+}
