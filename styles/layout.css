@@ -92,7 +92,7 @@ div.wrapper {
 #titlrbar {
 	padding: 0; }
 .titlebar_resize {
-	background: url(../images/actech_inc.png) no-repeat;
+	background: url(../images_new/actech_inc.png) no-repeat;
 	background-size: auto 60px;
 	width: 970px;
 	height: 60px;
@@ -341,9 +341,9 @@ body > table {
 	min-height: 600px;
 }
 
-body.contactus #content .content_resize {
+/*body.contactus #content .content_resize {
 	margin-top: -110px;
-}
+}*/
 body.contactus .left,.right {
 	float: left;
 	width: 50%;
