@@ -3,9 +3,9 @@ $(function() {
     '<div class="EmailForm hide">' +
     '<div class="handle">Ask us anything!</div>' +
     '<div class="form">' +
-    '<input class="name" placeholder="Name (what should we call you?)" /><br>' +
-    '<input class="email" placeholder="Email (how do we reach you?)" /><br>' +
-    '<textarea class="message" placeholder="Got any question? We have an answer for you."></textarea><br>' +
+    '<input class="name" placeholder="Name (How should we call you?)" /><br>' +
+    '<input class="email" placeholder="Email (How do we reach you?)" /><br>' +
+    '<textarea class="message" placeholder="Any question? We have an answer for you! "></textarea><br>' +
     '<div class="error_message"></div>' +
     '<div class="email_form_submit">Send</div>' +
     '</div></div>';
@@ -39,10 +39,9 @@ $('.EmailForm .email_form_submit').live('click', function() {
   clear_err_msg();
 
   $.get('https://mandrillapp.com/api/1.0/messages/send.json', {
-    key: 'sQPJ7TAllIMovqZLfUoESg', // test
-    // key: 'GiGL0eZcpKWIG7NUKqb2Cw', // production
+    key: 'GiGL0eZcpKWIG7NUKqb2Cw', // production
     message: {
-      subject: '[INQUERY] From website - ' + name,
+      subject: '[INQUIRY] From website - ' + name,
       text: message,
       from_email: email,
       from_name: name,

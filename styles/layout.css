@@ -379,7 +379,7 @@ body.contactus .map {
 	right: 12px;
 	width: 360px;
 	border: 1px solid #ccc;
-	margin-top: -400px;
+	margin-top: -426px;
 	background-color: white;
 	transition: margin-top 0.6s ease;
 	z-index: 9999;
@@ -417,12 +417,13 @@ body.contactus .map {
 
 .EmailForm .form {
 	position: relative;
-	height: 332px;
+	height: 356px;
 	padding: 12px;
 }
 
+
 .EmailForm .form input, textarea {
-	width: 100%;
+	width: 323px;
 	padding: 2px 5px;
 	font-size: 15px;
 }
