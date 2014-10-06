@@ -41,6 +41,9 @@ src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'),
       url('../fonts/Calibri.ttf#NeuesBauenDemo') format('ttf');
       font-weight: normal;
       font-style: normal; }
+* {
+	font-family: Arimo, Calibri;
+}
 #featured_slide_ {
     font-family: Arimo, Calibri;
 	border: solid #000 0px;
@@ -368,6 +371,25 @@ body.contactus .map {
 #gmap_canvas img{
 	max-width:none!important;
 	background:none!important;
+}
+
+.grid-box {
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 180px;
+    width: 180px;
+    text-decoration: none;
+    margin: 5px;
+    border: 1px solid black;
+}
+.grid-box span {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    text-align: right;
+    color: black;
 }
 
 
