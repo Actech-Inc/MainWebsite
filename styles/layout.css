@@ -9,11 +9,11 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 /* ----------Import---------- */
 @import url(mainmenu.css);
 @import url(slide.css);
-@import url(//fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* ----------Common---------- */
 .tc_img { border: solid #eee 5px; padding: 3px; }
-h4 { margin-bottom: 8px; font-size: 20px; font-family: Arimo, Calibri; text-align: left; }
+h4 { margin-bottom: 8px; font-size: 20px; font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: left; }
 .indexbg {
 /*background-image: url(../images/Just_logo);*/
 background-color: #fff;
@@ -29,20 +29,12 @@ br.clear { clear: both; margin-top: 0px; }
 	width: 100%; }
 body { margin: 0; padding: 0; overflow-y: scroll;  }
 img { border: none; display: block; margin: 0; padding: 0; }
-a:link { color: #dd0000; text-decoration: underline; font-family: Arimo, Calibri; }
-a:active { color: #dd0000; text-decoration: none; font-family: Arimo, Calibri; }
-a:visited { color: #dd0000; text-decoration: none; font-family: Arimo, Calibri; }
-a:hover { color: #dd0000; text-decoration: underline; font-family: Arimo, Calibri; }
-@font-face {
-font-family: 'Calibri';
-src: url('https://www.actech-inc.com/fonts/Calibri.eot');
-src: url('https://www.actech-inc.com/fonts/Calibri.eot?') format('embedded-opentype'),
-      url('https://www.actech-inc.com/fonts/Calibri.woff') format('woff'),url('https://www.actech-inc.com/fonts/neues_bauen_demo-webfont.ttf') format('truetype'),
-      url('https://www.actech-inc.com/fonts/Calibri.ttf') format('ttf');
-      font-weight: normal;
-      font-style: normal; }
+a:link { color: #dd0000; text-decoration: underline; font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+a:active { color: #dd0000; text-decoration: none; font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+a:visited { color: #dd0000; text-decoration: none; font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+a:hover { color: #dd0000; text-decoration: underline; font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 #featured_slide_ {
-    font-family: Arimo, Calibri;
+    font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border: solid #000 0px;
 	color: #000;
 	display: block;
@@ -72,18 +64,18 @@ div.wrapper {
 
 /* ----------Footer---------- */
 .footer {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #949494;
 	text-align: center; }
 #footer {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: block;
 	margin: 0 auto;
 	padding: 5px; }
 #footer p {
 	color: #ccc;
 	font-size: 13px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	margin: 0;
 	padding: 0; }
@@ -99,14 +91,14 @@ div.wrapper {
 	margin: 20px auto 20px; }
 
 /* ----------Content---------- */
-#content { font-family: Arimo, Calibri; }
+#content { font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 #content .content_resize {
 	margin: 0 auto;
 	width: 950px; }
 
 /* ----------Left Menu (235px; padding 15px; 225px+30px=265px)---------- */
 #content .leftmenu {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	float: left;
 	line-height: 30px;
 	margin: 0;
@@ -115,7 +107,7 @@ div.wrapper {
 #content .leftmenu ul { /* �������D�\�����D */
 	color: #000;
 	font-size: 20px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	list-style: none;
 	margin: 0px;
@@ -128,7 +120,7 @@ div.wrapper {
 	padding-left: 15px;
 }
 
-#content .leftmenu ul li { font-family: Arimo, Calibri; list-style: none; }
+#content .leftmenu ul li { font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif; list-style: none; }
 
 #content .leftmenu ul li a.current {
 	border-bottom: dotted #ddd 1px;
@@ -136,7 +128,7 @@ div.wrapper {
 	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 15px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bolder;
 	letter-spacing: 1px;
 	padding: 0 0 0 15px;
@@ -147,7 +139,7 @@ div.wrapper {
 	color: #777;
 	display: block;
 	font-size: 15px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	letter-spacing: 1px;
 	padding: 0 0 0 15px;
@@ -158,7 +150,7 @@ div.wrapper {
 	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 15px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	letter-spacing: 1px;
 	padding: 0 0 0 15px;
@@ -170,7 +162,7 @@ div.wrapper {
 	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 15px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bolder;
 	letter-spacing: 1px;
 	padding: 0 0 0 15px;
@@ -182,25 +174,25 @@ div.wrapper {
 	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 15px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bolder;
 	letter-spacing: 1px;
 	padding: 0 0 0 15px;
 	text-align: left;
 	text-decoration: none; }
 #content .leftmenu ul li ul {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border-bottom: dotted #fff 1px;
 	list-style: none;
 	margin-top: 0;
 	padding: 0 0 0 25px; }
-#content .leftmenu ul li ul li { font-family: Arimo, Calibri; list-style: none; }
+#content .leftmenu ul li ul li { font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif; list-style: none; }
 #content .leftmenu ul li ul li a:link {
 	border-bottom: dotted #ddd 1px;
 	color: #777;
 	display: block;
 	font-size: 14px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	letter-spacing: 1px;
 	padding: 0 0 0 20px;
@@ -211,7 +203,7 @@ div.wrapper {
 	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 14px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
  	letter-spacing: 1px;
 	padding: 0 0 0 20px;
@@ -222,7 +214,7 @@ div.wrapper {
 	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 14px;
- 	font-family: Arimo, Calibri;
+ 	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bolder;
 	letter-spacing: 1px;
 	padding: 0 0 0 20px;
@@ -233,7 +225,7 @@ div.wrapper {
 	color: rgba(8, 62, 114, 1);
 	display: block;
 	font-size: 14px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bolder;
 	letter-spacing: 1px;
 	padding: 0 0 0 20px;
@@ -242,7 +234,7 @@ div.wrapper {
 
 /* ----------Right Article (665px; padding 20px; 665px+40px=705px)---------- */
 #content .article {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	float: right;
 	line-height: 20px;
@@ -250,7 +242,7 @@ div.wrapper {
 	padding: 20px;
 	width: 645px; }
 #content .testimonials {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-style: italic;
 	background-image: url(../images/common/letter.jpg) ;
 	font-size: 15px;
@@ -264,7 +256,7 @@ div.wrapper {
 	margin: 20px 0px 0px 0px;}
 /* ----------Project Schedule---------- */
 #ps {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border: solid #ccc 1px;
 	width: 100%;
 	padding: 0px; }
@@ -275,7 +267,7 @@ div.wrapper {
 	font-weight: bold;
 	font-style: italic;
 	font-size: 14px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 20%;
 	padding: 10px; }
 #ps .tb_content {
@@ -284,28 +276,28 @@ div.wrapper {
 	font-weight: normal;
 	font-style: italic;
 	font-size: 14px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 80%;
 	padding: 2px; }
 
 /* ----------Plastic Molding Img---------- */
 #pm {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border: solid #fff 3px;
 	padding: 3px;
 	width: 100%; }
 #pm td {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #eee;
 	text-align: center;
 	width: 50%; }
 #pm .txtbg {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #ccc;	}
 
 /* ----------Major Resins Used---------- */
 #mrs {
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 100%;
 	padding: 0px; }
 #mrs .tb_name {
@@ -314,7 +306,7 @@ div.wrapper {
 	color: #fff;
 	font-style: normal;
 	font-size: 18px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 8px;
 	text-align: center; }
 #mrs .tb_title {
@@ -323,7 +315,7 @@ div.wrapper {
 	color: #009;
 	font-style: normal;
 	font-size: 14px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 5px;
 	text-align: right;
     width: 20%; }
@@ -333,7 +325,7 @@ div.wrapper {
 	font-weight: normal;
 	font-style: normal;
 	font-size: 14px;
-	font-family: Arimo, Calibri;
+	font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 80%;
 	padding: 5px; }
 
@@ -373,7 +365,7 @@ body.contactus .map {
 
 /* Email Form */
 .EmailForm {
-    font-family: Arimo, Calibri;
+    font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	position: fixed;
 	top: 100%;
 	right: 12px;
