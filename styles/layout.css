@@ -9,7 +9,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 /* ----------Import---------- */
 @import url(mainmenu.css);
 @import url(slide.css);
-@import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
+@import url(//fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
 
 /* ----------Common---------- */
 .tc_img { border: solid #eee 5px; padding: 3px; }
