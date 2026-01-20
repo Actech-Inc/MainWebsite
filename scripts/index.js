@@ -11,7 +11,6 @@ $(function() {
     '</div></div>';
 
   $('body').append(email_form);
-
 });
 
 $('.EmailForm .handle').live('click', function() {
@@ -21,18 +20,18 @@ $('.EmailForm .handle').live('click', function() {
 $('.EmailForm .email_form_submit').live('click', function() {
   var $EmailForm = $('.EmailForm');
   var name = $EmailForm.find('.name').val();
-  if(isEmpty(name)) {
+  if (isEmpty(name)) {
     return err('Your name please?');
   }
   var email = $EmailForm.find('.email').val();
-  if(isEmpty(email)) {
+  if (isEmpty(email)) {
     return err('Your email please?');
   }
-  if(!validateEmail(email)) {
+  if (!validateEmail(email)) {
     return err('Invalid email');
   }
   var message = $EmailForm.find('.message').val();
-  if(isEmpty(message)) {
+  if (isEmpty(message)) {
     return err('What do you want to tell us?')
   }
 
