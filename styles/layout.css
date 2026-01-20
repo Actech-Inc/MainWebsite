@@ -35,15 +35,12 @@ a:visited { color: #dd0000; text-decoration: none; font-family: Arimo, Calibri; 
 a:hover { color: #dd0000; text-decoration: underline; font-family: Arimo, Calibri; }
 @font-face {
 font-family: 'Calibri';
-src: url('../fonts/Calibri.eot');
-src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Calibri.woff') format('woff'),url('../fonts/neues_bauen_demo-webfont.ttf') format('truetype'),
-      url('../fonts/Calibri.ttf#NeuesBauenDemo') format('ttf');
+src: url('https://www.actech-inc.com/fonts/Calibri.eot');
+src: url('https://www.actech-inc.com/fonts/Calibri.eot?') format('embedded-opentype'),
+      url('https://www.actech-inc.com/fonts/Calibri.woff') format('woff'),url('https://www.actech-inc.com/fonts/neues_bauen_demo-webfont.ttf') format('truetype'),
+      url('https://www.actech-inc.com/fonts/Calibri.ttf') format('ttf');
       font-weight: normal;
       font-style: normal; }
-* {
-	font-family: Arimo, Calibri;
-}
 #featured_slide_ {
     font-family: Arimo, Calibri;
 	border: solid #000 0px;
@@ -371,25 +368,6 @@ body.contactus .map {
 #gmap_canvas img{
 	max-width:none!important;
 	background:none!important;
-}
-
-.grid-box {
-    position: relative;
-    display: inline-block;
-    background-size: cover;
-    background-position: 50% 50%;
-    height: 180px;
-    width: 180px;
-    text-decoration: none;
-    margin: 5px;
-    border: 1px solid black;
-}
-.grid-box span {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    text-align: right;
-    color: black;
 }
 
 
