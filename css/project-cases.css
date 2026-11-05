@@ -1,21 +1,15 @@
 
-.project-cases{background:var(--surface);border-top:1px solid var(--line)}.project-cases h2{font-size:clamp(2rem,3.5vw,3.3rem)}.cases-intro{max-width:46rem;margin:1rem 0 2rem;color:var(--muted)}.case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;align-items:start}.case-card{background:var(--white);border:1px solid var(--line);scroll-margin-top:2rem}.case-visual{background:var(--navy);color:white;padding:1.5rem;min-height:180px;display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem}.case-visual-label{font-size:.7rem;letter-spacing:.13em;color:var(--blue)}.case-flow{display:flex;align-items:center;gap:.75rem}.case-flow>span{flex:1;border-top:2px solid var(--accent);padding-top:.65rem;font-size:.9rem}.case-photo-note{font-size:.7rem;color:#c4cbda}.case-body{padding:1.75rem}.case-body h3{font-size:1.6rem;line-height:1.3;margin-top:.5rem}.case-description{color:var(--muted);margin-top:1rem}.case-value{border-left:2px solid var(--accent);padding-left:1rem;margin:1.5rem 0}.case-value strong{font-size:.875rem}.case-value p{font-size:.95rem;color:var(--muted);margin-top:.35rem}.case-details{border-top:1px solid var(--line)}.case-details summary,.case-link{font-size:.9rem;color:var(--accent-ink);cursor:pointer;padding-top:1rem;display:flex;justify-content:space-between;gap:1rem;list-style:none}.case-details summary::-webkit-details-marker{display:none}.case-details summary:after{content:"+"}.case-details[open] summary:after{content:"−"}.case-details summary:focus-visible,.case-link:focus-visible{outline:2px solid var(--blue);outline-offset:4px}.case-details h4{margin-top:1.25rem;font-size:.95rem}.case-details ul{padding-left:1.2rem;color:var(--muted);font-size:.95rem;line-height:1.8;margin-top:.5rem}.project-examples-link{display:inline-block;margin-left:1.5rem}@media(max-width:760px){.case-grid{grid-template-columns:1fr}.case-body{padding:1.25rem}.case-visual{padding:1.25rem}.project-examples-link{display:block;margin:1rem 0 0}}
-
-/* Matching square crops for both project photos, including the rotated module. */
-.case-photo{width:50%;aspect-ratio:1/1;margin:1.25rem auto 0;background:transparent;overflow:hidden;position:relative}
-.case-photo-image{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center;image-orientation:from-image}
-.case-photo-rotate{transform:rotate(-90deg)}
+.project-cases{background:var(--surface);border-top:1px solid var(--line)}.project-cases h2{font-size:clamp(2rem,3.5vw,3.3rem)}.cases-intro{max-width:46rem;margin:1rem 0 2rem;color:var(--muted)}.case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;align-items:start}.case-card{background:var(--white);border:1px solid var(--line);scroll-margin-top:2rem}.case-body{padding:1.75rem}.case-body h3{font-size:1.6rem;line-height:1.3;margin-top:.5rem}.case-description{color:var(--muted);margin-top:1rem}.case-value{border-left:2px solid var(--accent);padding-left:1rem;margin:1.5rem 0}.case-value strong{font-size:.875rem}.case-value p{font-size:.95rem;color:var(--muted);margin-top:.35rem}.project-examples-link{display:inline-block;margin-left:1.5rem}@media(max-width:760px){.case-grid{grid-template-columns:1fr}.case-body{padding:1.25rem}.project-examples-link{display:block;margin:1rem 0 0}}
 
 /* Compact side-by-side case details on the capabilities page. */
 #project-examples .case-card{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:1.25rem;padding:1.5rem;align-items:start}
 #project-examples .case-body{grid-column:1;grid-row:1;padding:0;min-width:0}
-#project-examples .case-photo{grid-column:2;grid-row:1;width:100%;margin:0}
 #project-examples .case-body h3{font-size:1.35rem;overflow-wrap:break-word}
 #project-examples .case-description{font-size:.94rem;margin-top:.75rem}
 #project-examples .case-value{margin:1rem 0;padding-left:.75rem}
 #project-examples .case-value p{font-size:.9rem}
 @media(min-width:761px) and (max-width:1100px){#project-examples .case-grid{grid-template-columns:1fr}#project-examples .case-card{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}}
-@media(max-width:760px){#project-examples .case-card{grid-template-columns:1fr;padding:1.25rem}#project-examples .case-photo{grid-column:1;grid-row:1;width:60%;max-width:260px;margin:0 auto}#project-examples .case-body{grid-column:1;grid-row:2}}
+@media(max-width:760px){#project-examples .case-card{grid-template-columns:1fr;padding:1.25rem}#project-examples .case-body{grid-column:1;grid-row:2}}
 
 /* Equal-height project cards within each desktop row. */
 #project-examples .case-grid{align-items:stretch}
