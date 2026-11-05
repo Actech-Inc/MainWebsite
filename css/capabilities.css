@@ -431,11 +431,6 @@
 /* Align gallery top with the heading below the section eyebrow. */
 
 /* Compact summaries with full-width, progressively disclosed technical detail. */
-.cap-material-jump {
-	color: var(--accent-ink);
-	text-decoration: underline;
-	text-underline-offset: 3px;
-}
 .cap-summary {
 	min-width: 0;
 }
@@ -445,12 +440,6 @@
 }
 .cap-summary dd {
 	line-height: 1.6;
-}
-.cap-material-jump {
-	display: block;
-	width: fit-content;
-	font-size: 0.8rem;
-	margin-top: 0.25rem;
 }
 .cap-detail {
 	grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
@@ -479,8 +468,7 @@
 .cap-technical > summary::-webkit-details-marker {
 	display: none;
 }
-.cap-technical > summary:focus-visible,
-.cap-material-jump:focus-visible {
+.cap-technical > summary:focus-visible {
 	outline: 3px solid var(--blue);
 	outline-offset: 4px;
 }
@@ -508,14 +496,6 @@
 	line-height: 1.7;
 	margin: 0;
 }
-.cap-materials {
-	margin-top: 1rem;
-	scroll-margin-top: 7rem;
-}
-.cap-materials > summary {
-	font-size: 0.9rem;
-	color: var(--accent-ink);
-}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -538,10 +518,6 @@
 	}
 	.cap-detail .cap-photo {
 		margin-top: 0;
-	}
-	.cap-materials > summary {
-		flex-direction: row;
-		align-items: center;
 	}
 	.cap-summary h2 {
 		overflow-wrap: anywhere;
