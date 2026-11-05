@@ -1,1 +1,13 @@
-:root{--navy:#272b4e;--navy-deep:#1d223e;--blue:#66b9f0;--ink:#242b43;--muted:#5c6474;--line:#dce1e8;--surface:#f3f5f7;--white:#fff;--content:1200px;--font:Arial,Helvetica,sans-serif;--section:clamp(3.75rem,7vw,6.5rem)}
+:root {
+	--navy: #272b4e;
+	--navy-deep: #1d223e;
+	--blue: #66b9f0;
+	--ink: #242b43;
+	--muted: #5c6474;
+	--line: #dce1e8;
+	--surface: #f3f5f7;
+	--white: #fff;
+	--content: 1200px;
+	--font: Arial, Helvetica, sans-serif;
+	--section: clamp(3.75rem, 7vw, 6.5rem);
+}

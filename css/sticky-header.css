@@ -1,42 +1,96 @@
 /* Shared navigation shown after the introductory section. */
-body.has-scroll-header .site-header.is-sticky{position:fixed;inset:0 0 auto;z-index:100;background:#192039;border-bottom:1px solid #ffffff18;box-shadow:0 5px 40px #11182b24;animation:header-enter 1.2s ease-out}
-body.has-scroll-header .site-header.is-sticky .header-inner{min-height:60px}
-body.has-scroll-header .site-header.is-sticky .brand img{width:150px}
-body.has-scroll-header .site-header.is-sticky #navigation{align-self:center;margin-bottom:0}
-body.has-scroll-header .site-header.is-sticky .cap-dropdown{top:calc(100% + 22px)}
-body.has-scroll-header .site-header.is-sticky .cap-dropdown:before{top:-23px;height:23px}
-body.has-scroll-header section[id]{scroll-margin-top:80px}
-@keyframes header-enter{from{transform:translateY(-100%)}to{transform:translateY(0)}}
-@media(max-width:760px){
- body.has-scroll-header .site-header.is-sticky .header-inner{min-height:56px}
- body.has-scroll-header .site-header.is-sticky .brand img{width:140px}
- body.has-scroll-header .site-header.is-sticky{max-height:100dvh;overflow-y:auto}
- body.has-scroll-header .site-header.is-sticky .cap-dropdown{position:static}
+body.has-scroll-header .site-header.is-sticky {
+	position: fixed;
+	inset: 0 0 auto;
+	z-index: 100;
+	background: #192039;
+	border-bottom: 1px solid #ffffff18;
+	box-shadow: 0 5px 40px #11182b24;
+	animation: header-enter 1.2s ease-out;
 }
-@media(prefers-reduced-motion:reduce){body.has-scroll-header .site-header.is-sticky{animation:none}}
+body.has-scroll-header .site-header.is-sticky .header-inner {
+	min-height: 60px;
+}
+body.has-scroll-header .site-header.is-sticky .brand img {
+	width: 150px;
+}
+body.has-scroll-header .site-header.is-sticky #navigation {
+	align-self: center;
+	margin-bottom: 0;
+}
+body.has-scroll-header .site-header.is-sticky .cap-dropdown {
+	top: calc(100% + 22px);
+}
+body.has-scroll-header .site-header.is-sticky .cap-dropdown:before {
+	top: -23px;
+	height: 23px;
+}
+body.has-scroll-header section[id] {
+	scroll-margin-top: 80px;
+}
+@keyframes header-enter {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+@media (max-width: 760px) {
+	body.has-scroll-header .site-header.is-sticky .header-inner {
+		min-height: 56px;
+	}
+	body.has-scroll-header .site-header.is-sticky .brand img {
+		width: 140px;
+	}
+	body.has-scroll-header .site-header.is-sticky {
+		max-height: 100dvh;
+		overflow-y: auto;
+	}
+	body.has-scroll-header .site-header.is-sticky .cap-dropdown {
+		position: static;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	body.has-scroll-header .site-header.is-sticky {
+		animation: none;
+	}
+}
 
 /* Match desktop navigation text to the logo's visible bottom, excluding PNG padding. */
-@media(min-width:761px){
- body.has-scroll-header .site-header.is-sticky #navigation{align-self:flex-end;margin-bottom:9px}
- body.has-scroll-header .site-header.is-sticky .cap-dropdown{top:calc(100% + 9px)}
- body.has-scroll-header .site-header.is-sticky .cap-dropdown:before{top:-10px;height:10px}
+@media (min-width: 761px) {
+	body.has-scroll-header .site-header.is-sticky #navigation {
+		align-self: flex-end;
+		margin-bottom: 9px;
+	}
+	body.has-scroll-header .site-header.is-sticky .cap-dropdown {
+		top: calc(100% + 9px);
+	}
+	body.has-scroll-header .site-header.is-sticky .cap-dropdown:before {
+		top: -10px;
+		height: 10px;
+	}
 }
 
 /* Keep the active indicator and dropdown edge on the same bottom border. */
 @media (min-width: 761px) {
-  body.has-scroll-header .site-header.is-sticky {
-    border-bottom: 2px solid #192039;
-  }
-  body.has-scroll-header .site-header.is-sticky .nav-main-link[aria-current="page"]::after {
-    height: 2px;
-    bottom: -11px;
-  }
-  body.has-scroll-header .site-header.is-sticky .cap-dropdown {
-    border-top-width: 2px;
-  }
+	body.has-scroll-header .site-header.is-sticky {
+		border-bottom: 2px solid #192039;
+	}
+	body.has-scroll-header
+		.site-header.is-sticky
+		.nav-main-link[aria-current="page"]::after {
+		height: 2px;
+		bottom: -11px;
+	}
+	body.has-scroll-header .site-header.is-sticky .cap-dropdown {
+		border-top-width: 2px;
+	}
 }
 
-body.has-scroll-header .site-header.is-sticky .nav-main-link[aria-current="page"] {
-  color: var(--blue);
-  font-weight: 400;
+body.has-scroll-header
+	.site-header.is-sticky
+	.nav-main-link[aria-current="page"] {
+	color: var(--blue);
+	font-weight: 400;
 }
