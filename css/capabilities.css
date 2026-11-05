@@ -428,8 +428,6 @@
 	mix-blend-mode: normal;
 }
 
-/* Align gallery top with the heading below the section eyebrow. */
-
 /* Compact summaries with full-width, progressively disclosed technical detail. */
 .cap-summary {
 	min-width: 0;
