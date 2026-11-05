@@ -1,0 +1,342 @@
+/* Full-width photography and stronger section headings. */
+.site-header #navigation{text-transform:uppercase;letter-spacing:.035em;}
+.site-header .cap-menu:hover>summary,.site-header .cap-menu:hover .nav-main-link{color:var(--blue);}
+.site-header .cap-menu .nav-main-link{padding:0;border:0;line-height:1;}
+.site-header .nav-expand{display:inline-flex;align-items:center;justify-content:center;min-width:24px;min-height:24px;}
+@media(min-width:761px){
+ .site-header .cap-menu .nav-expand{min-height:0;}
+ .site-header .cap-dropdown:before{content:"";position:absolute;left:0;right:0;top:-15px;height:15px;}
+}
+@media(min-width:761px){
+ .site-header #navigation{align-self:flex-end;margin-bottom:14px;line-height:1;align-items:flex-end;}
+ .site-header .cap-menu>summary{padding:0;line-height:1;}
+ .site-header .cap-dropdown{top:calc(100% + 14px);}
+}
+:root {--accent:#f58220;--accent-hover:#ff993d;--accent-ink:#b94e00;}
+.button-blue {background:var(--accent);color:var(--navy-deep);}
+.button-blue:hover {background:var(--accent-hover);}
+.hero .small-rule {background:var(--accent);}
+.steps .step-number {color:var(--accent-ink);}
+.experience strong span {color:var(--accent-ink);}
+.contact .email-address span {color:var(--accent);}
+.step-number {display:flex;align-items:center;gap:.85rem;}
+.step-icon {width:27px;height:27px;flex-shrink:0;}
+.site-header {background:#192039;color:#eef2f8;border-bottom:1px solid #ffffff20;}
+.header-inner {min-height:72px;}
+.brand img {width:175px;height:auto;filter:brightness(0) invert(1);}
+.site-header .nav-contact {border-color:#ffffff30;}
+.site-header nav a:hover {color:var(--blue);}
+.site-header .nav-contact span {color:var(--blue);}
+.menu-toggle {color:#eef2f8;border-color:#ffffff40;}
+.site-footer {background:var(--navy);color:#c4cbda;border-top:1px solid #ffffff25;padding-block:1rem;}
+.site-footer .brand img {width:150px;}
+.hero {position:relative;isolation:isolate;padding-top:0;overflow:hidden;background:#192039;}
+.hero-backdrop {position:absolute;inset:0;z-index:-2;}
+.hero-backdrop img {width:100%;height:100%;object-fit:cover;object-position:center 45%;}
+.hero::before {content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(19,26,47,.97) 0%,rgba(19,26,47,.90) 31%,rgba(19,26,47,.50) 60%,rgba(19,26,47,.14) 100%);}
+.hero-grid {display:block;padding-top:clamp(2rem,3vw,3rem);padding-bottom:clamp(4rem,7vw,7rem);min-height:650px;}
+.hero-copy {max-width:620px;}
+.hero h1 {font-size:clamp(3rem,5.3vw,5rem);line-height:1.06;letter-spacing:-.045em;}
+.hero-lead {font-size:1.25rem;max-width:29rem;}
+.hero-description {max-width:29rem;color:#e0e6ef;}
+.hero-note {color:#d1d9e6;}
+.hero-foot {margin-top:0;color:#eef2f8;padding-block:1.35rem;}
+.section h2:not(#contact-title) {font-size:clamp(2.5rem,4vw,3.7rem);font-weight:600;line-height:1.08;}
+.section-subtitle {font-size:clamp(1.15rem,1.8vw,1.5rem);line-height:1.45;margin-top:1.25rem;letter-spacing:-.02em;color:var(--muted);}
+.about-intro>.section-subtitle {font-size:clamp(1.15rem,1.8vw,1.5rem);color:var(--ink);}
+.section-heading.split {grid-template-columns:1.5fr 1fr;}
+.feature-icon {width:28px;height:28px;flex-shrink:0;color:#327ba9;}
+.product h3,.benefits h3 {display:flex;align-items:flex-start;gap:.75rem;}
+.product h3 {min-height:3rem;}
+.product h3 .feature-icon {width:26px;height:26px;margin-top:-2px;}
+.benefits article>span {display:none;}
+.benefits p {margin-left:2.5rem;}
+@media(min-width:1500px){.hero-grid{min-height:730px;}}
+@media(max-width:760px){
+  .header-inner {min-height:64px;padding-block:.4rem;}
+  .brand img {width:150px;}
+  .site-footer .brand img {width:140px;}
+  .js-ready nav a {border-top-color:#ffffff25;}
+  .hero-grid {min-height:0;padding-block:1.75rem 4rem;}
+  .hero-backdrop img {object-position:65% center;}
+  .hero::before {background:linear-gradient(90deg,rgba(19,26,47,.95),rgba(19,26,47,.78));}
+  .hero h1 {font-size:clamp(2.7rem,9vw,4rem);}
+  .hero-lead {font-size:1.15rem;}
+  .hero-foot {padding-block:1rem;}
+  .section-heading.split {grid-template-columns:1fr;}
+  .section h2:not(#contact-title) {font-size:clamp(2.3rem,8vw,3rem);}
+  .product h3 {min-height:0;}
+}
+
+/* Home navigation sits over the existing hero photograph. */
+.home-page .site-header{position:absolute;inset:0 0 auto;z-index:30;background:transparent;border-bottom:1px solid #ffffff20;}
+.home-page .hero-grid{padding-top:calc(72px + clamp(2rem,3vw,3rem));}
+.home-page .hero::before{background:linear-gradient(180deg,rgba(19,26,47,.45),transparent 170px),linear-gradient(90deg,rgba(19,26,47,.97) 0%,rgba(19,26,47,.90) 31%,rgba(19,26,47,.50) 60%,rgba(19,26,47,.14) 100%);}
+@media(max-width:760px){
+ .home-page .hero-grid{padding-top:calc(64px + 1.75rem);}
+ .home-page .hero::before{background:linear-gradient(90deg,rgba(19,26,47,.95),rgba(19,26,47,.78));}
+ .home-page .site-header:has(nav.is-open){background:rgba(25,32,57,.97);}
+}
+@media(max-width:760px){html:not(.js-ready) .home-page .site-header{position:relative;background:#192039}html:not(.js-ready) .home-page .hero-grid{padding-top:1.75rem}}
+
+/* Match inner-page navigation to its title section. */
+body:not(.home-page) .site-header{background:var(--navy);border-bottom-color:transparent;}
+body:not(.home-page) .cap-dropdown{background:var(--navy);}
+
+/* Contact FAQ follows the original checklist typography and colors. */
+.drawing-checklist>.inquiry-faq{margin-top:0;font-family:inherit}
+.inquiry-faq h3{font-size:1.1rem;font-weight:400;color:inherit;margin-bottom:1.5rem}
+.inquiry-faq details{border-bottom:1px solid #ffffff20}
+.inquiry-faq summary{display:flex;align-items:baseline;gap:.7rem;padding:.55rem 0;cursor:pointer;list-style:none;font-family:inherit;font-size:.94rem;font-weight:400;line-height:1.65;color:#d6dce8}
+.inquiry-faq summary::-webkit-details-marker{display:none}
+.inquiry-faq summary::marker{content:""}
+.inquiry-faq summary:before{content:"+";color:var(--blue);flex:0 0 .6rem}
+.inquiry-faq details[open]>summary:before{content:"−"}
+.inquiry-faq summary:hover{color:var(--blue)}
+.inquiry-faq summary:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.contact .inquiry-faq p{font-family:inherit;font-size:.94rem;font-weight:400;line-height:1.65;color:#d6dce8;margin:0 0 .8rem;padding-left:1.3rem}
+.drawing-checklist>.inquiry-faq+.button{margin-top:2rem}
+
+.contact-details{display:grid;gap:1rem;margin-top:2rem;font-style:normal;font-size:1rem;line-height:1.6}
+.contact-detail{display:flex;align-items:flex-start;gap:.85rem;color:#d6dce8;text-decoration:none;max-width:100%}
+.contact-detail svg{flex:0 0 21px;width:21px;height:21px;margin-top:.15rem;color:var(--blue)}
+.contact-detail span{min-width:0;overflow-wrap:anywhere}
+a.contact-detail:hover{color:var(--blue)}
+a.contact-detail:focus-visible{outline:2px solid var(--blue);outline-offset:5px}
+
+.supplier-profile-link{grid-column:1/-1;margin-top:1rem}.supplier-profile-link a{color:var(--accent-ink);font-size:.95rem;text-decoration:underline;text-underline-offset:4px}
+
+/* Compact, evenly sized desktop navigation without dropdown chevrons. */
+.site-header .nav-expand{display:none}
+@media(min-width:761px){
+ .site-header #navigation{gap:.35rem;flex-wrap:nowrap}
+ .site-header #navigation>.cap-menu,.site-header #navigation>a:not(.nav-contact){flex:0 0 10em;width:10em;text-align:center}
+ .site-header #navigation>.cap-menu>summary{justify-content:center;gap:0}
+ .site-header #navigation>.cap-menu>summary>.nav-main-link{display:block;width:100%;white-space:nowrap}
+ .site-header #navigation>a:not(.nav-contact){white-space:nowrap}
+ .site-header #navigation>.nav-contact{width:15em;flex:0 0 15em;padding-left:.8rem;margin-left:.25rem;text-align:center;white-space:nowrap}
+ .site-header #navigation .cap-dropdown{text-align:left;left:0}
+}
+@media(min-width:761px) and (max-width:1000px){
+ .site-header #navigation{gap:0}
+ .site-header #navigation>.cap-menu,.site-header #navigation>a:not(.nav-contact){width:9em;flex-basis:9em}
+ .site-header #navigation>.nav-contact{width:14em;flex-basis:14em;padding-left:.5rem;margin-left:0}
+}
+
+/* Align each row of process descriptions regardless of title wrapping. */
+.steps>li{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:0;align-content:start}
+.steps>li>h3{min-height:0;align-self:start}
+.steps>li>p{align-self:start}
+
+/* Dropdown labels retain natural capitalization. */
+.site-header #navigation .cap-dropdown{text-transform:none;letter-spacing:normal}
+
+/* Alternate the homepage About section with the preceding project section. */
+.home-page #about{background:var(--white)}
+
+.home-page #process{background:var(--surface)}
+
+/* Offset the logo asset’s transparent left inset so its visible edge aligns with page headings. */
+.site-header .brand img{transform:translateX(-8.228571%)}
+
+/* Homepage section titles link to their corresponding pages. */
+.home-page .section-title-link:hover,.home-page .section-title-link:focus-visible{color:var(--blue)}
+
+/* Match capabilities-page top spacing across the homepage content sections. */
+.home-page #capabilities,.home-page #selected-projects,.home-page #about,.home-page #process{padding-top:2.75rem}
+@media(max-width:760px){.home-page #capabilities,.home-page #selected-projects,.home-page #about,.home-page #process{padding-top:2rem}}
+
+.home-page .hero h1{font-size:clamp(1.7rem,4.8vw,3.8rem);line-height:1.18;letter-spacing:-.035em}
+.home-page .hero h1 .hero-tagline{display:block;margin-top:0;color:var(--white);font-size:inherit;line-height:inherit;letter-spacing:inherit}
+
+/* Align the benefits with the introductory statement and tighten the list. */
+.home-page #about .about-grid{row-gap:1.5rem;align-items:start}
+.home-page #about .about-heading{grid-column:1/-1}
+.home-page #about .about-intro>.section-subtitle{margin-top:0}
+.home-page #about .benefits article{padding-block:.85rem}
+.home-page #about .benefits article:first-child{padding-top:0}
+.home-page #about .benefits article:last-child{padding-bottom:0}
+.home-page #about .benefits h3{align-items:center}
+.home-page #about .benefits p{margin-top:.4rem;line-height:1.5}
+.home-page #about .supplier-profile-link{margin-top:0}
+@media(min-width:761px){.home-page #about .about-intro,.home-page #about .benefits{align-self:first baseline}}
+
+/* Stable FAQ alignment shared by the home and unified case contact sections. */
+.home-page #contact .drawing-checklist,.project-example-v2-page #contact .drawing-checklist{align-self:start}
+.home-page .product>img.assembly-product-photo{object-fit:cover;object-position:center;background:var(--surface)}
+
+/* Align the contact FAQ with the main heading, below the shared eyebrow. */
+:is(.home-page,.workflow-page,.about-page,.capabilities-page) #contact .contact-grid{row-gap:0}
+:is(.home-page,.workflow-page,.about-page,.capabilities-page) #contact .contact-grid>.eyebrow{grid-column:1/-1}
+:is(.home-page,.workflow-page,.about-page,.capabilities-page) #contact .drawing-checklist{align-self:start}
+@media(max-width:760px){
+ :is(.home-page,.workflow-page,.about-page,.capabilities-page) #contact .drawing-checklist{margin-top:2.5rem}
+}
+
+/* Align capability copy with the subtitle and the right image edge. */
+@media(min-width:761px){
+ .home-page #capabilities .section-heading.split{row-gap:0;align-items:start}
+ .home-page #capabilities .section-heading.split>div{display:contents}
+ .home-page #capabilities .section-heading .eyebrow{grid-column:1;grid-row:1}
+ .home-page #capabilities .section-heading h2{grid-column:1;grid-row:2}
+ .home-page #capabilities .section-heading .section-subtitle{grid-column:1;grid-row:3}
+ .home-page #capabilities .section-heading.split>p{grid-column:2;grid-row:3;justify-self:end;margin-top:1.25rem;width:100%}
+}
+body:is(.capabilities-page, .workflow-page, .about-page) .site-header:not(.is-sticky){border-bottom-color:#ffffff20;}
+.cap-intro .eyebrow:has(> .small-rule){display:flex;align-items:center;gap:.65rem}
+.cap-intro .small-rule{background:var(--accent);flex-shrink:0}
+
+.site-header .nav-main-link[aria-current="page"] {
+  text-decoration: none;
+  position: relative;
+  color: white;
+}
+.site-header .nav-main-link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 2px;
+  background: var(--accent);
+  pointer-events: none;
+}
+
+@media (min-width: 761px) {
+  .site-header .nav-main-link[aria-current="page"]::after {
+    bottom: -16px;
+  }
+  body.has-scroll-header .site-header.is-sticky .nav-main-link[aria-current="page"]::after {
+    bottom: -11px;
+  }
+}
+
+@media (min-width: 761px) {
+  .site-header #navigation > .cap-menu {
+    --nav-indicator-width: 10em;
+  }
+  .site-header #navigation .cap-dropdown {
+    border-top-color: transparent;
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: var(--nav-indicator-width) 2px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+  }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .site-header #navigation > .cap-menu {
+    --nav-indicator-width: 9em;
+  }
+}
+
+@media (min-width: 761px) {
+  .site-header:not(.is-sticky) .nav-main-link[aria-current="page"]::after {
+    bottom: -14px;
+  }
+  .site-header:not(.is-sticky) #navigation .cap-dropdown {
+    background-image: none;
+  }
+  .site-header:not(.is-sticky) #navigation .cap-dropdown::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -1px;
+    width: var(--nav-indicator-width);
+    height: 2px;
+    background: var(--accent);
+    pointer-events: none;
+  }
+}
+
+/* Anchor dropdown indicators to the same link as the current-page indicator. */
+@media (min-width: 761px) {
+  .site-header:not(.is-sticky) #navigation .cap-dropdown::after {
+    content: none;
+  }
+  .site-header:not(.is-sticky) .cap-menu[open] > summary > .nav-main-link {
+    position: relative;
+  }
+  .site-header:not(.is-sticky) .cap-menu[open] > summary > .nav-main-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -14px;
+    height: 2px;
+    background: var(--accent);
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 761px) {
+  .site-header:not(.is-sticky) .nav-main-link[aria-current="page"]::after,
+  .site-header:not(.is-sticky) .cap-menu[open] > summary > .nav-main-link::after {
+    height: 1.5px;
+  }
+}
+
+.site-footer .footer-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 1rem;
+  text-align: right;
+}
+.site-footer .footer-inner > small {
+  width: auto;
+  line-height: 1;
+}
+/* Exclude the logo asset's transparent bottom padding from footer alignment. */
+.site-footer .footer-inner > .brand {
+  width: 150px;
+  flex: 0 0 auto;
+}
+.site-footer .footer-inner > .brand img {
+  display: block;
+  width: 100%;
+  margin-bottom: -5.6%;
+}
+.site-footer .footer-inner > small {
+  text-box-trim: trim-end;
+  text-box-edge: cap alphabetic;
+}
+@media (max-width: 760px) {
+  .site-footer .footer-inner > .brand {width: 140px;}
+}
+
+/* Match the closing section's breathing room to the masthead label inset. */
+body #contact:is(.section, .pe-section) {
+  padding-block: clamp(2rem, 3vw, 3rem);
+}
+@media (max-width: 760px) {
+  body #contact:is(.section, .pe-section) {
+    padding-block: 1.75rem;
+  }
+}
+
+.home-page #process .steps > li {
+  border-top-color: var(--navy);
+}
+.home-page #process .step-icon,
+.home-page #process .step-number {
+  color: #55728f;
+}
+
+/* Enlarge desktop navigation hit areas without shifting labels or indicators. */
+@media (min-width: 761px) {
+  .site-header #navigation .nav-main-link {
+    position: relative;
+  }
+  .site-header #navigation .nav-main-link::before {
+    content: "";
+    position: absolute;
+    inset: -18px -2px -14px;
+    cursor: pointer;
+  }
+  .site-header.is-sticky #navigation .nav-main-link::before {
+    top: -18px;
+    bottom: -9px;
+  }
+}

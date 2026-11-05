@@ -1,0 +1,86 @@
+/* Access-control case and its two entry cards only. */
+.case-grid>.access-project-entry{grid-column:1/-1;border-top:2px solid var(--accent)}
+#selected-projects .access-project-entry,#project-examples .access-project-entry{display:block;padding:0}
+#selected-projects .access-project-entry .case-body,#project-examples .access-project-entry .case-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2.5rem;padding:1.75rem}
+.access-project-entry .case-value{margin-top:0}
+.access-project-entry .eyebrow{font-size:.7rem;line-height:1.5}
+.access-project-entry h3{overflow-wrap:break-word}
+.access-project-page .cap-intro h1{max-width:62rem;font-size:clamp(2.1rem,4.4vw,4rem)}
+.access-project-page .company-split>*{min-width:0}
+.access-project-page .access-decisions{margin-top:1.75rem}
+.access-project-page .access-subheading{margin-top:2rem}
+.access-project-page .project-note{margin-bottom:0}
+.access-project-page .access-related{display:flex;flex-wrap:wrap;gap:1rem 2rem;list-style:none;padding:0}
+.access-project-page .access-contact-copy{max-width:42rem;margin:1.25rem 0 1.75rem;color:#d6dce8}
+.access-project-page .profile-table{table-layout:fixed;overflow-wrap:break-word}
+@media(max-width:760px){
+ #selected-projects .access-project-entry .case-body,#project-examples .access-project-entry .case-body{grid-template-columns:minmax(0,1fr);gap:1.25rem;padding:1.25rem}
+ .access-project-page .access-related{display:block}
+}
+
+/* Three equal project cards; narrow screens can scroll through the same row. */
+#selected-projects .case-carousel,#project-examples .case-carousel{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc((100% - 3rem)/3);gap:1.5rem;align-items:stretch;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px;margin:-6px;scrollbar-width:thin}
+#selected-projects .case-carousel .case-card,#project-examples .case-carousel .case-card{display:flex;flex-direction:column;grid-column:auto;min-width:0;padding:0;gap:0;scroll-snap-align:start}
+#selected-projects .case-carousel .case-photo,#project-examples .case-carousel .case-photo{width:70%;aspect-ratio:1;margin:1.25rem auto 0;flex-shrink:0}
+#selected-projects .case-carousel .case-body,#project-examples .case-carousel .case-body{display:flex;flex-direction:column;flex:1;gap:0;padding:1.25rem;min-width:0}
+#selected-projects .case-carousel h3,#project-examples .case-carousel h3{font-size:1.3rem;line-height:1.3;overflow-wrap:break-word}
+#selected-projects .case-carousel .case-value,#project-examples .case-carousel .case-value{margin:1rem 0}
+.case-carousel .case-link,.case-carousel .case-details{margin-top:auto}
+.case-carousel .case-photo-placeholder{background:var(--surface)}
+.case-carousel-controls{display:flex;justify-content:flex-end;gap:.65rem;margin:-.5rem 0 1rem}
+.case-carousel-controls button{display:grid;place-items:center;width:42px;height:42px;padding:10px;border:1px solid var(--line);background:var(--white);color:var(--ink);cursor:pointer;border-radius:50%}
+.case-carousel-controls svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.case-carousel-controls button:hover{color:var(--blue);border-color:var(--blue)}
+@media(max-width:1000px){#selected-projects .case-carousel,#project-examples .case-carousel{grid-auto-columns:calc((100% - 1.5rem)/2)}}
+@media(max-width:760px){#selected-projects .case-carousel,#project-examples .case-carousel{grid-auto-columns:90%}}
+
+.access-project-entry .case-photo-placeholder{display:grid;place-items:center;color:var(--muted);font-size:.9rem}
+.access-project-entry .access-entry-revised{font-size:.85rem;margin-top:.65rem;padding-top:0}
+
+/* Extend each home card's primary link across its surface. */
+#selected-projects .case-card{position:relative}
+#selected-projects .case-link:not(.access-entry-revised)::after{content:"";position:absolute;inset:0;z-index:1}
+#selected-projects .case-link:not(.access-entry-revised):focus-visible::after{outline:2px solid var(--blue);outline-offset:2px}
+#selected-projects .access-entry-revised{position:relative;z-index:2}
+
+/* Homepage case photos span the card width like the capability photos above. */
+#selected-projects .case-carousel .case-product-photo{width:100%;max-width:none;margin:0;aspect-ratio:1.42;background:linear-gradient(145deg,#edf3f8,#e4ecf4 55%,#d9e5ef)}
+#selected-projects .case-product-photo img{object-fit:contain;mix-blend-mode:multiply}
+@media(max-width:760px){#selected-projects .case-carousel .case-product-photo{aspect-ratio:1.5}}
+
+#selected-projects .case-card-hitarea{position:absolute;inset:0;z-index:1}
+#selected-projects .case-card-hitarea:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+#selected-projects .case-card:has(.case-card-hitarea){cursor:pointer}
+
+/* Workflow case cards share the homepage's full-card navigation. */
+#project-examples .case-card{position:relative}
+#project-examples .case-card-hitarea{position:absolute;inset:0;z-index:1}
+#project-examples .case-card-hitarea:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+#project-examples .case-card:has(.case-card-hitarea){cursor:pointer}
+
+/* Quiet, persistent affordance for workflow project cards. */
+:is(#project-examples,#selected-projects) .case-card:has(.case-card-hitarea){background:#fafbfd;transition:background-color .15s ease}
+:is(#project-examples,#selected-projects) .case-card:has(.case-card-hitarea):hover,:is(#project-examples,#selected-projects) .case-card:has(.case-card-hitarea):focus-within{background:#fff}
+:is(#project-examples,#selected-projects) .case-project-prompt{display:flex;justify-content:space-between;align-items:center;gap:1rem;border-top:1px solid var(--line);padding-top:1rem;margin-top:auto;color:var(--accent-ink);font-size:.875rem}
+:is(#project-examples,#selected-projects) .case-value{margin-bottom:1.5rem}
+@media(prefers-reduced-motion:reduce){:is(#project-examples,#selected-projects) .case-card:has(.case-card-hitarea){transition:none}}
+
+:is(#project-examples, #selected-projects) .case-card:has(.case-card-hitarea) {
+  transition: background-color .15s ease, transform .2s ease, box-shadow .2s ease;
+}
+@media (hover: hover) {
+  :is(#project-examples, #selected-projects) .case-card:has(.case-card-hitarea):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .12);
+  }
+}
+:is(#project-examples, #selected-projects) .case-card:has(.case-card-hitarea):focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .12);
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(#project-examples, #selected-projects) .case-card:has(.case-card-hitarea) {
+    transition: none;
+    transform: none;
+  }
+}

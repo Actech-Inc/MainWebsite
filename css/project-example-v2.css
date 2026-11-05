@@ -1,0 +1,167 @@
+/* Shared layout for all unified project examples. */
+.project-example-v2-page .pe-section{padding-block:2.75rem;scroll-margin-top:85px}
+.project-example-v2-page .pe-section .container{min-width:0}
+.project-example-v2-page .pe-tint{background:var(--surface)}
+.project-example-v2-page .pe-version-links,.project-example-v2-page .pe-case-nav,.project-example-v2-page .pe-related{display:flex;flex-wrap:wrap;gap:.75rem 1.75rem;font-size:.9rem}
+.pe-version-links a,.pe-case-nav a,.pe-text-link,.pe-related a{border-bottom:1px solid currentColor;padding-bottom:.2rem}
+.pe-version-links{margin-bottom:1.25rem}
+.project-example-v2-page .pe-case-nav{margin-bottom:2rem;padding-block:1rem;border-block:1px solid #ffffff40}
+.pe-case-nav a[aria-current=page]{color:var(--blue);font-weight:700;border-bottom:2px solid var(--blue)}
+.pe-hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:3rem;align-items:start}
+.pe-hero-grid>*{min-width:0}
+.project-example-v2-page .cap-intro h1{font-size:clamp(2rem,3.5vw,3.25rem);line-height:1.1}
+.project-example-v2-page .cap-intro .pe-product{font-size:1.15rem;font-weight:700;color:var(--blue);margin:1.25rem 0 .75rem}
+.project-example-v2-page .cap-intro .pe-intro{font-size:1rem;max-width:none;margin:0}
+.pe-actions{display:flex;flex-wrap:wrap;gap:1rem 1.5rem;align-items:center;margin-top:1.75rem}
+.pe-actions .button{white-space:normal;text-align:left}
+.pe-image-placeholder{aspect-ratio:4/3;width:100%;min-width:0;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:.9rem;border-radius:8px}
+.pe-overview{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem;margin:2rem 0 0;padding-top:1.5rem;border-top:1px solid #ffffff40;font-size:.95rem}
+.pe-overview dt{font-weight:700;color:var(--blue);line-height:1.45}
+.pe-overview dd{margin:.6rem 0 0;color:#d7dfea}
+.pe-section h2{font-size:clamp(1.8rem,3vw,2.8rem)}
+.pe-section-intro{max-width:55rem;margin-top:1rem;color:var(--muted)}
+.pe-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;margin-top:2rem}
+.pe-card{min-width:0;border-top:2px solid var(--accent,#f58220);padding-top:1.1rem}
+.pe-card h3,.pe-stage h3,.pe-responsibility h3,.pe-context h3{font-size:1.2rem;line-height:1.35;letter-spacing:-.015em}
+.pe-card p,.pe-stage p,.pe-responsibility p,.pe-context p{margin-top:.75rem;color:var(--muted)}
+.pe-responsibility{border-left:3px solid var(--accent,#f58220);background:var(--surface);padding:1.5rem;margin-top:2rem}
+.pe-stages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;list-style:none;margin:2rem 0;padding:0}
+.pe-stage{display:flex;gap:1rem;min-width:0;border-top:1px solid var(--line);padding-top:1.25rem}
+.pe-stage>div{min-width:0}
+.pe-number{font-size:1rem;font-weight:700;color:var(--muted);flex:none;padding-top:.1rem}
+.pe-photo-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}
+.pe-result h3{font-size:1.6rem;line-height:1.25;color:var(--navy)}
+.pe-result .pe-result-note{font-size:.9rem}
+.pe-result-note:empty{display:none}
+.pe-context{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;margin-top:2rem;border-top:1px solid var(--line);padding-top:1.5rem}
+.pe-contact{background:var(--navy);color:white}
+.pe-contact h2{max-width:55rem}
+.pe-contact .eyebrow{color:var(--blue)}
+.pe-contact .pe-section-intro{color:#d7dfea}
+.project-example-v2-page .pe-related{border-top:1px solid #ffffff40;padding-top:1.5rem;margin-top:2rem}
+@media(max-width:1000px){.pe-hero-grid{gap:2rem;grid-template-columns:repeat(2,minmax(0,1fr))}.pe-overview{grid-template-columns:repeat(2,minmax(0,1fr))}.pe-cards{gap:1.25rem}.pe-actions .button{font-size:.9rem}}
+@media(max-width:760px){.project-example-v2-page .pe-section{padding-block:2rem}.pe-hero-grid,.pe-overview,.pe-cards,.pe-stages,.pe-photo-pair,.pe-context{grid-template-columns:minmax(0,1fr)}.pe-hero-grid{gap:1.75rem}.pe-cards,.pe-stages{gap:1.5rem}.pe-responsibility{padding:1rem}.project-example-v2-page .pe-case-nav{display:flex}.pe-section h2,.pe-result h3{overflow-wrap:break-word}}
+.pe-product-photo{aspect-ratio:4/3;background:white;border:1px solid var(--line);border-radius:8px;overflow:hidden;min-width:0}.pe-product-photo img{width:100%;height:100%;object-fit:contain}
+
+/* Align an uploaded hero photo with the title, below the eyebrow. */
+@media(min-width:761px){
+ .pe-hero-grid:has(>.pe-product-photo){row-gap:0}
+ .pe-hero-grid:has(>.pe-product-photo)>div:first-child{display:contents}
+ .pe-hero-grid:has(>.pe-product-photo)>div:first-child>*{grid-column:1}
+ .pe-hero-grid:has(>.pe-product-photo) .eyebrow{grid-row:1}
+ .pe-hero-grid:has(>.pe-product-photo) h1{grid-row:2}
+ .pe-hero-grid:has(>.pe-product-photo) .pe-product{grid-row:3}
+ .pe-hero-grid:has(>.pe-product-photo) .pe-intro{grid-row:4}
+ .pe-hero-grid:has(>.pe-product-photo) .pe-actions{grid-row:5}
+ .pe-hero-grid>.pe-product-photo{grid-column:2;grid-row:2/6;width:92%;justify-self:end;align-self:start}
+}
+
+/* Soft blue-gray treatment for uploaded product-photo cards. */
+.pe-product-photo{background:linear-gradient(145deg,#edf3f8 0%,#e4ecf4 55%,#d9e5ef 100%);border-color:rgba(210,225,238,.22)}
+.pe-product-photo img{mix-blend-mode:multiply}
+
+/* Shared heading icons: centered even when a title wraps. */
+.project-example-v2-page .pe-icon-heading{display:flex;align-items:center;gap:.7rem}
+.pe-heading-icon{width:26px;height:26px;flex:0 0 26px;color:#3183b8}
+.pe-icon-heading>span{min-width:0}
+
+/* Reuse the homepage contact columns, spacing and inquiry component. */
+.project-example-v2-page #contact.pe-section{padding-block:clamp(2rem,3vw,3rem)}
+.project-example-v2-page #contact .contact-grid{row-gap:2rem}
+.pe-contact-copy,.pe-contact .drawing-checklist{min-width:0}
+.project-example-v2-page #contact .pe-related{grid-column:1/-1;margin-top:0}
+.pe-contact .inquiry-faq p{font-family:inherit;font-size:.94rem;font-weight:400;line-height:1.65;color:#d6dce8;margin:0 0 .8rem;padding-left:1.3rem}
+@media(max-width:760px){.project-example-v2-page #contact .contact-grid{row-gap:2.5rem}}
+
+/* Numbered section labels shared by the three case pages. */
+.project-example-v2-page .pe-section-eyebrow{font-size:12px;line-height:1.5;letter-spacing:.13em;color:#526277;margin:0 0 14px}
+
+/* Fill the access-control hero frame with the supplied cropped photo. */
+.pe-product-photo img[src$="access-control-product-v2.png"]{object-fit:cover;object-position:center}
+.pe-product-photo img[src$="typing-learning-device-v2.png"]{object-fit:cover;object-position:center}
+
+/* Access-control hero: product backdrop with a readable navy foreground. */
+.project-example-v2-page .pe-photo-hero{position:relative;isolation:isolate;background:#192039;overflow:hidden}
+.pe-photo-hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url('../assets/images/access-control-product-lowres.jpg') right center/auto 100% no-repeat}
+.pe-photo-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(19,26,47,.35),transparent 30%,rgba(19,26,47,.85) 100%),linear-gradient(90deg,#131a2f 0%,rgba(19,26,47,.96) 30%,rgba(19,26,47,.65) 60%,rgba(19,26,47,.22) 100%)}
+.pe-photo-hero .pe-hero-grid:has(>.pe-product-photo){display:block}
+.pe-photo-hero .pe-hero-grid:has(>.pe-product-photo)>div:first-child{display:block;max-width:60%}
+.pe-photo-hero .pe-hero-grid>.pe-product-photo{display:none}
+.pe-photo-hero .pe-overview{background:rgba(19,26,47,.55);padding:1.5rem;border-radius:4px}
+@media(max-width:760px){
+ .pe-photo-hero .pe-hero-grid:has(>.pe-product-photo)>div:first-child{max-width:none}
+ .pe-photo-hero::before{background-position:65% center;background-size:auto 100%}
+ .pe-photo-hero::after{background:linear-gradient(90deg,rgba(19,26,47,.96),rgba(19,26,47,.78))}
+}
+.pe-photo-hero::before{background-color:#fff}
+
+/* Shared full-bleed case heroes behind the initial navigation. */
+.project-example-v2-page .site-header:not(.is-sticky){position:absolute;inset:0 0 auto;z-index:30;background:transparent;border-bottom:1px solid #ffffff20}
+.project-example-v2-page #overview.pe-photo-hero{padding-top:calc(96px + 2.75rem);padding-bottom:0}
+.pe-photo-hero::before{filter:none;transform:scale(1.015)}
+.pe-photo-hero-photogate-timer::before{background-image:url('../assets/images/photogate-timer-product-lowres.jpg')}
+.pe-photo-hero-typing-device::before{background-image:url('../assets/images/typing-learning-device-lowres.jpg')}
+.pe-photo-hero .pe-overview{margin-bottom:0;border-radius:4px 4px 0 0}
+@media(max-width:760px){
+ .project-example-v2-page #overview.pe-photo-hero{padding-top:calc(80px + 2rem);padding-bottom:0}
+ .project-example-v2-page .site-header:has(nav.is-open){background:rgba(25,32,57,.97)}
+ html:not(.js-ready) .project-example-v2-page .site-header{position:relative;background:#192039}
+ html:not(.js-ready) .project-example-v2-page #overview.pe-photo-hero{padding-top:2rem}
+}
+
+/* Let product details show through the navigation, as on the homepage. */
+.pe-photo-hero::before{background-size:auto 72%;background-position:right center}
+.pe-photo-hero::after{background:linear-gradient(180deg,rgba(19,26,47,.45),transparent 170px,rgba(19,26,47,.8) 100%),linear-gradient(90deg,rgba(19,26,47,.97) 0%,rgba(19,26,47,.90) 31%,rgba(19,26,47,.50) 60%,rgba(19,26,47,.14) 100%)}
+.project-example-v2-page #overview.pe-photo-hero{padding-top:calc(72px + 2.75rem)}
+@media(max-width:760px){
+ .pe-photo-hero::after{background:linear-gradient(90deg,rgba(19,26,47,.95),rgba(19,26,47,.78))}
+ .project-example-v2-page #overview.pe-photo-hero{padding-top:calc(64px + 2rem)}
+}
+
+/* Align the hero image's right edge with the shared content container. */
+.pe-photo-hero::before{transform:none;background-position:right max(2.5rem,calc((100vw - var(--content))/2)) center}
+@media(max-width:1000px){.pe-photo-hero::before{background-position:right 1.5rem center}}
+@media(max-width:760px){.pe-photo-hero::before{background-position:right 1.25rem center}}
+
+/* Photogate engineering sequence: read down the left, then down the right. */
+.pe-stages.pe-timeline{grid-auto-flow:column;grid-template-rows:auto auto;column-gap:3rem;row-gap:0;counter-reset:timeline}
+.pe-timeline .pe-stage{position:relative;border-top:0;padding:0 0 2.25rem 3.25rem;display:block}
+.pe-timeline .pe-number{position:absolute;left:0;top:0;width:2rem;height:2rem;display:grid;place-items:center;padding:0;border:2px solid #3183b8;border-radius:50%;background:var(--surface);color:var(--navy);font-size:.9rem;line-height:1;font-variant-numeric:tabular-nums;z-index:1}
+.pe-timeline .pe-stage h3{min-height:2rem;display:flex;align-items:center}
+.pe-timeline .pe-stage::before{content:"";position:absolute;left:calc(1rem - 1px);top:2rem;bottom:0;border-left:2px solid #90b8d0}
+.pe-timeline .pe-stage:first-child .pe-number{background:var(--accent,#f58220);border-color:var(--accent,#f58220);color:#fff}
+.pe-timeline .pe-stage:nth-child(2)::after{display:none}
+.pe-timeline .pe-stage:nth-child(3) .pe-number{border-style:solid}
+@media(min-width:761px){.pe-timeline .pe-stage:nth-child(3)::after{content:"";position:absolute;left:calc(1rem - 1px);top:-16px;height:16px;border-left:2px solid #90b8d0}}
+.pe-timeline .pe-stage:last-child .pe-number{border:3px double #3183b8;background:#3183b8;color:white}
+.pe-timeline .pe-stage:is(:nth-child(2),:last-child){align-self:start}
+.pe-timeline .pe-stage:is(:nth-child(2),:last-child)::before{bottom:calc(2.25rem + .3em)}
+.pe-timeline .pe-stage:last-child::before{border-left-style:dashed}
+@media(max-width:760px){
+ .pe-stages.pe-timeline{grid-auto-flow:row;grid-template-rows:none}
+ .pe-timeline .pe-stage:nth-child(2)::after{display:none}
+}
+
+/* Typing-device hero uses a plain navy background. */
+.project-example-v2-page #overview.pe-photo-hero-typing-device{background:var(--navy)}
+.pe-photo-hero-typing-device::before,.pe-photo-hero-typing-device::after{display:none}
+
+/* All unified case intros use the same plain navy treatment. */
+.project-example-v2-page #overview.pe-photo-hero{background:var(--navy)}
+.project-example-v2-page .pe-photo-hero::before,.project-example-v2-page .pe-photo-hero::after{display:none}
+
+/* Keep text layout when the hero photo markup is removed. */
+.pe-photo-hero .pe-hero-grid{display:block}
+.pe-photo-hero .pe-hero-grid>div:first-child{display:block;max-width:60%}
+@media(max-width:1000px){.pe-photo-hero .pe-hero-grid>div:first-child{max-width:none}}
+
+@media(max-width:760px){.project-example-v2-page #contact.pe-section{padding-block:1.75rem}}
+/* Match the Our Process palette for challenge and approach items. */
+:is(#challenge, #approach) .pe-card {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2.2rem;
+}
+:is(#challenge, #approach) .pe-heading-icon {
+  color: var(--accent-ink);
+}
