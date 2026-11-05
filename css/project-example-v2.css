@@ -302,16 +302,6 @@
 	margin: 0 0 14px;
 }
 
-/* Fill the access-control hero frame with the supplied cropped photo. */
-.pe-product-photo img[src$="access-control-product-v2.png"] {
-	object-fit: cover;
-	object-position: center;
-}
-.pe-product-photo img[src$="typing-learning-device-v2.png"] {
-	object-fit: cover;
-	object-position: center;
-}
-
 /* Access-control hero: product backdrop with a readable navy foreground. */
 .project-example-v2-page .pe-photo-hero {
 	position: relative;
